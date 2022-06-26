@@ -9,3 +9,7 @@ hook_add = '''
 	\	'separator':{'left': "", 'right': ""}
 	\}
 '''
+
+[[plugins]]
+repo = 'vimwiki/vimwiki'
+

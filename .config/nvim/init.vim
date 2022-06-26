@@ -1,12 +1,14 @@
+filetype plugin indent on
 set nocompatible
 
-set number
-set list listchars=eol:↓,tab:--»,space:·
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set autoindent
 set smartindent
+set number
+set list listchars=eol:↓,tab:--»,space:·
+set mouse=a
 
 " ##########|dein.vim|##########
 " install dir {{{
@@ -44,7 +46,7 @@ endif
 " plugins removed check {{{
 let s:removed_plugins = dein#check_clean()
 if len(s:removed_plugins) > 0
-	call map(s:removed_plugins, "delete(v:val, 'rf)")
+	call map(s:removed_plugins, "delete(v:val, 'rf')")
 	call dein#recache_runtimepath()
 endif
 " }}}

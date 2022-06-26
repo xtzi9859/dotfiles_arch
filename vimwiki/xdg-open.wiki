@@ -1,0 +1,13 @@
+= basic of xdg-open=
+* Get the mimetype of a file:
+	xdg-mime query filetype [filename]
+
+* Get the default application of a mimetype
+	xdg-mime query default [mimetype]
+
+* Set the default application for a mimetype
+	 xdg-mime default [application.desktop] [mimetype]
+
+* list desktop files
+	ls /usr/share/applications
+
