@@ -2,14 +2,34 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
+repo = 'cocopon/iceberg.vim'
+
+[[plugins]]
+repo = 'sainnhe/everforest'
+hook_add = 'colorscheme everforest'
+
+[[plugins]]
 repo = 'itchyny/lightline.vim'
 hook_add = '''
+	set noshowmode
+	set laststatus=2
 	let g:lightline = {
-	\	'colorscheme': 'wombat',
-	\	'separator':{'left': "", 'right': ""}
+	\	'colorscheme': 'selenized_black',
+	\	'active': {
+	\		'left': [ ['mode', 'paste'], ['readonly', 'filename', 'modified'] ],
+	\		'right': [ ['lineinfo', 'percent'], ['charvaluehex', 'fileencoding', 'fileformat', 'filetype'] ]
+	\	},
+	\	'separator':{'left': "", 'right': ""},
+	\	'subseparator': {'left': "", 'right': ""}
 	\}
 '''
 
 [[plugins]]
 repo = 'vimwiki/vimwiki'
+
+[[plugins]]
+repo = 'neovim/nvim-lsp'
+
+[[plugins]]
+repo = 'neovim/nvim-lspconfig'
 
